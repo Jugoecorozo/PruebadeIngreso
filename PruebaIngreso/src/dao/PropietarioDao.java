@@ -100,8 +100,9 @@ public class PropietarioDao implements IntPropietario{
     @Override
     public List<Propietario> SelectAll() throws DaoException {
         Connection connection=ManagerConexion.getInstance().getConexion().getCon();
-        String SQL = "SELECT idPropietario, nomPropietario, tipoId," +
-                "numId, ciudad, direccion, tel FROM productos order by idPropietario";
+        String SQL = "SELECT idPropietario, nomPropietario,nomTipo, numId, ciudad, direccion, tel " +
+                "FROM propietario JOIN tipoIdentificacion ON propietario.tipoId= tipoIdentificacion.idTipo " +
+                "ORDER BY idPropietario";
         PreparedStatement statement = null;
         ResultSet resultSet=null;
         List<Propietario> lista= new ArrayList<>();

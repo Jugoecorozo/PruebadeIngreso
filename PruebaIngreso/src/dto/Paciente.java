@@ -6,11 +6,11 @@ public class Paciente {
 
     private String idPaciente;
     private String nomPaciente;
-    private int especie;
-    private int raza;
-    private Date fechaNac; //dar formato a la fecha YYYY-MM-DD
-    private int idProMascota;
-    private Date FechaIng;
+    private String especie;
+    private String raza;
+    private String fechaNac; //dar formato a la fecha YYYY-MM-DD
+    private String idProMascota;
+    private String FechaIng;
 
     public String getIdPaciente() {
         return idPaciente;
@@ -28,43 +28,43 @@ public class Paciente {
         this.nomPaciente = nomPaciente;
     }
 
-    public int getEspecie() {
+    public String getEspecie() {
         return especie;
     }
 
-    public void setEspecie(int especie) {
+    public void setEspecie(String especie) {
         this.especie = especie;
     }
 
-    public int getRaza() {
+    public String getRaza() {
         return raza;
     }
 
-    public void setRaza(int raza) {
+    public void setRaza(String raza) {
         this.raza = raza;
     }
 
-    public Date getFechaNac() {
+    public String getFechaNac() {
         return fechaNac;
     }
 
-    public void setFechaNac(Date fechaNac) {
+    public void setFechaNac(String fechaNac) {
         this.fechaNac = fechaNac;
     }
 
-    public int getIdProMascota() {
+    public String getIdProMascota() {
         return idProMascota;
     }
 
-    public void setIdProMascota(int idProMascota) {
+    public void setIdProMascota(String idProMascota) {
         this.idProMascota = idProMascota;
     }
 
-    public Date getFechaIng() {
+    public String getFechaIng() {
         return FechaIng;
     }
 
-    public void setFechaIng(Date fechaIng) {
+    public void setFechaIng(String fechaIng) {
         FechaIng = fechaIng;
     }
 
